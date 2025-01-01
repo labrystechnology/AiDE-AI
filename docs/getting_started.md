@@ -1,15 +1,15 @@
-# Getting Started with AI Project Template
+# Getting Started with AiDE
 
 ## Overview
 
-This template provides a structured approach to developing projects with AI assistance. It creates a standardized way for AI to understand your project context and maintain documentation.
+AiDE provides a structured approach to developing projects with AI assistance. It creates a standardized way for AI to understand your project context and maintain documentation.
 
 ## Quick Start
 
-1. Clone this template:
+1. Clone AiDE:
    ```bash
-   git clone https://github.com/username/ai-project-template.git
-   cd ai-project-template
+   git clone https://github.com/username/aide.git
+   cd aide
    ```
 
 2. Create your project:
