@@ -23,6 +23,7 @@ AiDE is a lightweight framework for structuring AI-assisted development. It prov
 ```
 .context/                # AI context directory
 ├── current_state.md    # Project status and state
+├── roadmap.md         # Long-term project planning
 ├── decisions/          # Architecture decision records
 │   └── TEMPLATE.md
 ├── tasks/             # Task tracking
@@ -58,6 +59,7 @@ AiDE is a lightweight framework for structuring AI-assisted development. It prov
 - [Getting Started](docs/getting_started.md)
 - [Best Practices](docs/best_practices.md)
 - [Workflow Guide](docs/workflow.md)
+- [Standard Commands](docs/commands.md)
 
 ## Contributing
 

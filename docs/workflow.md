@@ -94,19 +94,25 @@ graph LR
 - Technical state
 - Recent changes
 
-### 2. Decisions (`decisions/`)
+### 2. Roadmap (`roadmap.md`)
+- Priority goals
+- Active initiatives
+- Future direction
+- Achievement tracking
+
+### 3. Decisions (`decisions/`)
 - Architecture choices
 - Technical decisions
 - Implementation approaches
 - Each decision in separate file
 
-### 3. Tasks (`tasks/`)
+### 4. Tasks (`tasks/`)
 - Current work items
 - Progress tracking
 - Dependencies
 - Validation criteria
 
-### 4. Sessions (`sessions/`)
+### 5. Sessions (`sessions/`)
 - Development sessions
 - Changes made
 - Decisions taken

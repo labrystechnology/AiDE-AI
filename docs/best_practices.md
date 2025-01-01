@@ -37,7 +37,22 @@
 - Too much detail
 ```
 
-### 2. Decision Records (`decisions/`)
+### 2. Roadmap (`roadmap.md`)
+```markdown
+# Good
+- Milestone-based progression
+- Flexible priorities
+- Clear direction
+- Achievement tracking
+
+# Avoid
+- Rigid time constraints
+- Over-detailed planning
+- Unrealistic goals
+- Outdated milestones
+```
+
+### 3. Decision Records (`decisions/`)
 ```markdown
 # Good
 - One decision per file
@@ -52,7 +67,7 @@
 - Undocumented trade-offs
 ```
 
-### 3. Task Tracking (`tasks/`)
+### 4. Task Tracking (`tasks/`)
 ```markdown
 # Good
 - Clear objectives
@@ -67,7 +82,7 @@
 - Isolated tasks
 ```
 
-### 4. Session Records (`sessions/`)
+### 5. Session Records (`sessions/`)
 ```markdown
 # Good
 - Regular summaries
@@ -195,7 +210,8 @@ git commit -m "docs: Update project context"
 ├── current_state.md    # Project status
 ├── decisions/          # Architecture choices
 ├── tasks/             # Work tracking
-└── sessions/          # Daily summaries
+├── sessions/          # Daily summaries
+└── roadmap.md          # Project roadmap
 ```
 
 ### 3. Success Checklist
