@@ -1,170 +1,159 @@
-# AI Project Workflow Guide
+# AiDE Workflow Guide
 
-## Development Lifecycle
+## Overview
 
-### 1. Project Initialization
+AiDE is a drop-in framework that structures how you work with AI assistants. By maintaining a `.context` directory, the AI can track project state, decisions, and progress across development sessions.
+
+## Getting Started
+
 ```mermaid
 graph TD
-    A[Project Discussion] --> B[Setup Structure]
-    B --> C[Initial Documentation]
-    C --> D[First Tasks]
-    D --> E[Begin Development]
+    A[Copy .context Directory] --> B[Tell AI About AiDE]
+    B --> C[Begin Development]
+    C --> D[AI Maintains Context]
 ```
 
-### 2. Development Cycle
-```mermaid
-graph TD
-    A[Start Session] --> B[Review Context]
-    B --> C[Development Work]
-    C --> D[AI Updates Docs]
-    D --> E[Review Changes]
-    E --> F[Commit Updates]
-    F --> A
-```
+1. **Add to Your Project**
+   ```bash
+   cp -r AiDE/.context your-project/
+   ```
 
-## Session Workflow
+2. **Start Using AiDE**
+   - Tell AI "I'm using the AiDE methodology"
+   - AI will maintain the `.context` directory
+
+## Development Workflow
 
 ### 1. Starting a Session
 
-1. **Context Review**
-   ```bash
-   # Point AI to context
-   cd your-project
-   # Discuss current state in .context/
-   ```
+```mermaid
+graph LR
+    A[Start Session] --> B[Tell AI about AiDE]
+    B --> C[Review State]
+    C --> D[Set Goals]
+```
 
-2. **Goal Setting**
-   - Review current tasks
-   - Set session objectives
-   - Identify blockers
+1. **Context Setup**
+   - Tell AI you're using AiDE
+   - AI reviews `current_state.md`
+   - Discuss session goals
 
-3. **State Check**
+2. **State Review**
    - Current project status
-   - Open issues
-   - Previous session notes
+   - Open tasks
+   - Recent decisions
 
 ### 2. During Development
 
-1. **Code Changes**
-   - Implement features
-   - Fix issues
-   - Refactor code
-
-2. **Documentation**
-   - AI updates docs
-   - Tracks decisions
-   - Records progress
-
-3. **Communication**
-   - Discuss changes
-   - Ask questions
-   - Get AI assistance
-
-### 3. Session Wrap-up
-
-1. **Review**
-   - Check AI's updates
-   - Verify documentation
-   - Confirm progress
-
-2. **Commit**
-   - Review changes
-   - Commit updates
-   - Push changes
-
-3. **Next Steps**
-   - Plan next session
-   - Note open items
-   - Set priorities
-
-## Documentation Flow
-
-### 1. Context Updates
 ```mermaid
 graph LR
     A[Code Changes] --> B[AI Updates]
-    B --> C[User Review]
-    C --> D[Commit]
+    B --> C[Documentation]
+    C --> A
 ```
 
-### 2. Decision Records
+1. **Code Work**
+   - Implement features
+   - Fix bugs
+   - Refactor code
+
+2. **AI Documentation**
+   - Updates current state
+   - Records decisions
+   - Tracks tasks
+   - Maintains session notes
+
+3. **Continuous Context**
+   - AI understands project state
+   - Provides relevant suggestions
+   - Maintains continuity
+
+### 3. Ending a Session
+
 ```mermaid
 graph LR
-    A[Discussion] --> B[AI Documents]
-    B --> C[Review]
-    C --> D[Finalize]
+    A[Review Changes] --> B[Update Status]
+    B --> C[Commit Updates]
 ```
 
-### 3. Task Tracking
-```mermaid
-graph LR
-    A[Create Task] --> B[Work]
-    B --> C[Update Status]
-    C --> D[Complete]
-```
+1. **Review**
+   - Check AI's documentation
+   - Verify state updates
+   - Confirm progress
+
+2. **Wrap Up**
+   - Commit `.context` changes
+   - Note next steps
+   - Set next priorities
+
+## Context Structure
+
+### 1. Current State (`current_state.md`)
+- Project status
+- Active features
+- Technical state
+- Recent changes
+
+### 2. Decisions (`decisions/`)
+- Architecture choices
+- Technical decisions
+- Implementation approaches
+- Each decision in separate file
+
+### 3. Tasks (`tasks/`)
+- Current work items
+- Progress tracking
+- Dependencies
+- Validation criteria
+
+### 4. Sessions (`sessions/`)
+- Development sessions
+- Changes made
+- Decisions taken
+- Next steps
 
 ## Best Practices
 
-### 1. Communication
-- Clear objectives
-- Regular updates
-- Consistent terminology
-- Document decisions
+### 1. State Management
+- Let AI maintain state
+- Review changes regularly
+- Keep state current
+- Commit with code
+
+### 2. Decision Records
+- One decision per file
+- Include context
+- Note alternatives
+- Track consequences
+
+### 3. Task Tracking
+- Clear descriptions
+- Defined objectives
+- Track progress
+- Note blockers
+
+### 4. Session Records
+- Regular summaries
+- Track progress
+- Note challenges
+- Plan ahead
+
+## Tips for Success
+
+### 1. AI Collaboration
+- Be explicit about using AiDE
+- Trust AI to maintain docs
+- Review AI's updates
+- Provide clear context
 
 ### 2. Documentation
-- Let AI maintain
-- Regular reviews
-- Keep current
-- Be consistent
-
-### 3. Version Control
-- Regular commits
-- Clear messages
-- Document with code
-- Clean history
-
-## Common Workflows
-
-### 1. Feature Development
-1. Create task
-2. Discuss with AI
-3. Implement
-4. Update docs
-5. Review
-6. Commit
-
-### 2. Bug Fixing
-1. Document issue
-2. Investigate
-3. Fix
-4. Test
-5. Update docs
-6. Commit
-
-### 3. Refactoring
-1. Plan changes
-2. Document decision
-3. Implement
-4. Update docs
-5. Test
-6. Commit
-
-## Tips and Tricks
-
-### 1. Efficiency
-- Use AI effectively
-- Automate where possible
-- Regular commits
-- Clear communication
-
-### 2. Quality
-- Regular reviews
-- Consistent patterns
-- Complete documentation
-- Thorough testing
-
-### 3. Maintenance
-- Clean as you go
+- Commit context changes
+- Keep templates clean
+- Use consistent format
 - Regular updates
-- Remove obsolete
-- Stay organized
+
+### 3. Project Evolution
+- Let AI suggest improvements
+- Adapt templates as needed
+- Keep what works
+- Remove what doesn't

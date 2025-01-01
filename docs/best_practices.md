@@ -1,121 +1,206 @@
-# AI Project Template Best Practices
+# AiDE Best Practices
 
-## AI Collaboration
+## Core Principles
 
-### 1. Context Management
-- Always start sessions by pointing AI to `.context`
-- Let AI maintain all documentation
-- Review AI's documentation updates
-- Commit documentation changes regularly
+### 1. AI Collaboration
+- Tell the AI you're using AiDE at the start of each session
+- Let AI maintain all documentation in `.context`
+- Review AI's updates before committing
+- Trust the AI to track project state
 
-### 2. Communication
-- Be specific about project goals
-- Ask AI to explain its decisions
-- Use consistent terminology
-- Keep discussions focused
+### 2. Context Management
+- Keep `.context` in your project root
+- Commit `.context` changes with related code
+- Review state updates regularly
+- Let AI handle the formatting
 
-### 3. Documentation
-- Let AI handle documentation updates
-- Review changes before commits
-- Keep documentation focused and current
-- Use standard formats
+### 3. Documentation Flow
+- AI updates docs as you code
+- Review changes at session end
+- Commit documentation with code
+- Keep templates unchanged
 
-## Project Organization
+## Working with `.context`
 
-### 1. Directory Structure
-- Maintain clean separation of concerns
-- Keep AI context in `.context`
-- Organize by feature/module
-- Use consistent naming
+### 1. Current State (`current_state.md`)
+```markdown
+# Good
+- Regular updates by AI
+- Clear status sections
+- Focused information
+- Current priorities
 
-### 2. Version Control
-- Commit documentation with related code
-- Use conventional commit messages
-- Review documentation PRs
-- Keep history clean
+# Avoid
+- Manual editing
+- Outdated information
+- Duplicate content
+- Too much detail
+```
 
-### 3. Task Management
-- Let AI track tasks and progress
-- Update status in real-time
-- Link tasks to decisions
-- Track dependencies
+### 2. Decision Records (`decisions/`)
+```markdown
+# Good
+- One decision per file
+- Clear problem statement
+- Documented alternatives
+- Noted consequences
 
-## Development Workflow
-
-### 1. Session Management
-- Start with context review
-- Set clear session goals
-- Let AI track progress
-- End with status update
-
-### 2. Decision Making
-- Document decisions as they happen
-- Include context and reasoning
-- Track alternatives considered
-- Note consequences
-
-### 3. Progress Tracking
-- Update status after changes
-- Track blockers and issues
-- Monitor progress against goals
-- Regular milestone reviews
-
-## Common Pitfalls
-
-### 1. Documentation
-- Letting documentation get stale
-- Not reviewing AI updates
-- Inconsistent formats
+# Avoid
+- Multiple decisions per file
 - Missing context
+- Vague reasoning
+- Undocumented trade-offs
+```
 
-### 2. Communication
-- Not providing enough context
-- Unclear project goals
-- Inconsistent terminology
-- Skipping status updates
+### 3. Task Tracking (`tasks/`)
+```markdown
+# Good
+- Clear objectives
+- Defined validation
+- Updated progress
+- Linked dependencies
 
-### 3. Process
-- Bypassing AI documentation
-- Irregular updates
-- Missing decision records
-- Incomplete session summaries
+# Avoid
+- Vague descriptions
+- Missing criteria
+- Stale status
+- Isolated tasks
+```
+
+### 4. Session Records (`sessions/`)
+```markdown
+# Good
+- Regular summaries
+- Key decisions noted
+- Clear next steps
+- Technical details
+
+# Avoid
+- Missing sessions
+- Vague updates
+- No action items
+- Lost context
+```
+
+## Daily Workflow
+
+### 1. Starting Your Day
+```markdown
+1. Tell AI: "I'm using AiDE"
+2. Review current_state.md
+3. Check active tasks
+4. Set session goals
+```
+
+### 2. During Development
+```markdown
+1. Code normally
+2. Let AI update docs
+3. Review changes
+4. Discuss decisions
+```
+
+### 3. Ending Your Day
+```markdown
+1. Review AI updates
+2. Verify state
+3. Commit changes
+4. Note next steps
+```
+
+## Common Patterns
+
+### 1. Making Decisions
+```markdown
+1. Discuss with AI
+2. AI creates decision record
+3. Review reasoning
+4. Commit decision
+```
+
+### 2. Tracking Tasks
+```markdown
+1. Describe task to AI
+2. AI creates task file
+3. Update progress
+4. Mark completion
+```
+
+### 3. Managing Sessions
+```markdown
+1. Start with context
+2. Work normally
+3. AI tracks progress
+4. Review summary
+```
 
 ## Tips for Success
 
-### 1. Getting Started
-- Complete initial setup fully
-- Review example projects
-- Start with small tasks
-- Build consistent habits
-
-### 2. Maintenance
-- Regular context updates
-- Consistent documentation
-- Clear communication
-- Regular reviews
-
-### 3. Scaling
-- Modular organization
-- Clear dependencies
-- Consistent patterns
-- Regular cleanup
-
-## Template Customization
-
-### 1. Structure
-- Adapt to project needs
-- Maintain core patterns
-- Document changes
-- Keep it simple
-
-### 2. Process
-- Fit your workflow
-- Keep what works
-- Remove what doesn't
+### 1. Communication
+- Be explicit about using AiDE
+- Let AI maintain structure
+- Review AI's work
 - Stay consistent
 
-### 3. Tools
-- Integrate with your stack
-- Automate where possible
-- Use standard tools
-- Keep it maintainable
+### 2. Version Control
+- Commit `.context` with code
+- Use clear commit messages
+- Regular updates
+- Keep history clean
+
+### 3. Project Evolution
+- Let AI suggest improvements
+- Keep structure simple
+- Remove unused elements
+- Stay focused
+
+## Anti-Patterns to Avoid
+
+### 1. Documentation
+ Manually editing `.context` files
+ Ignoring AI's updates
+ Skipping session records
+ Duplicating information
+
+### 2. Process
+ Not telling AI about AiDE
+ Working outside context
+ Skipping reviews
+ Losing continuity
+
+### 3. Structure
+ Moving `.context`
+ Changing templates
+ Complex hierarchies
+ Custom formats
+
+## Quick Reference
+
+### 1. Essential Commands
+```bash
+# Add to existing project
+cp -r AiDE/.context your-project/
+
+# Start session
+"I'm using AiDE methodology"
+
+# End session
+git add .context/
+git commit -m "docs: Update project context"
+```
+
+### 2. Key Files
+```
+.context/
+├── current_state.md    # Project status
+├── decisions/          # Architecture choices
+├── tasks/             # Work tracking
+└── sessions/          # Daily summaries
+```
+
+### 3. Success Checklist
+- [ ] `.context` in project root
+- [ ] AI knows about AiDE
+- [ ] Regular reviews
+- [ ] Consistent commits
+- [ ] Clear communication
