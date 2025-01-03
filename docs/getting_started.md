@@ -14,10 +14,10 @@ AiDE provides a structured approach to AI-assisted development by creating a sta
 
 2. Start a conversation with your AI assistant:
    ```markdown
-   You: "I'm using the AiDE methodology"
+   You: "This project is ongoing. In order to be a more effective coding assistant, I am using a lightweight framework for structuring AI-assisted development. Please review all of the content in @AmazingStories/.context before we begin this new session."
    AI: [Reviews current state and prepares for AiDE workflow]
    
-   You: "Starting new session: initial project setup"
+   You: "This is a newproject. In order to be a more effective coding assistant, I am using, a lightweight framework for structuring AI-assisted development. Please review all of the content in @AmazingStories/.context before we begin the initial project setup."
    AI: [Creates session file and guides project discussion]
    ```
 
