@@ -3,8 +3,10 @@
 
 The AiDE framework is a lightweight, drop-in solution for structuring AI-assisted development. It standardizes project context management, documentation, and collaboration, ensuring your assistant stays informed and productive throughout the project lifecycle.
 
+---
+
 > **⚠ Disclaimer**  
-> Some AI code assistants (like Windsurf by Codeium) have token limits that could be quickly consumed when reading or writing to `.context` files. While this framework has proven tremendously helpful, developers should be aware of these limitations. Using it with code assistants that leverage your own API keys can help avoid the stricter token limits imposed by some platforms.
+> Some AI-powered code assistants have predefined token limits that could be quickly consumed when reading or writing to `.context` files. While this framework has proven tremendously helpful, developers should be aware of these limitations. Using it with code assistants that leverage your own API keys can help avoid the stricter token limits imposed by some platforms.
 
 ---
 
