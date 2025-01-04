@@ -3,12 +3,8 @@
 
 The AiDE framework is a lightweight, drop-in solution for structuring AI-assisted development. It standardizes project context management, documentation, and collaboration, ensuring your assistant stays informed and productive throughout the project lifecycle.
 
----
-
 > **⚠ Disclaimer**  
 > Some AI-powered code assistants have predefined token limits that could be quickly consumed when reading or writing to `.context` files. While this framework has proven tremendously helpful, developers should be aware of these limitations. Using it with code assistants that leverage your own API keys can help avoid the stricter token limits imposed by some platforms.
-
----
 
 ## Features
 
@@ -17,8 +13,6 @@ The AiDE framework is a lightweight, drop-in solution for structuring AI-assiste
   - **New projects**: Use your AI assistant or the AiDE Planning Assistant GPT to generate an initial roadmap, tasks, and documentation.
   - **Existing projects**: Let the assistant analyze your codebase and update the `.context` files to reflect the current state.
 - **Standardized structure**: Organized templates for roadmaps, tasks, decisions, and sessions.
-
----
 
 ## How It Works
 
@@ -42,8 +36,6 @@ The AiDE framework is a lightweight, drop-in solution for structuring AI-assiste
    - Track changes, decisions, and next steps.
    - Maintain development continuity.
 
----
-
 ## Getting Started
 
 ### New Project
@@ -61,8 +53,6 @@ The AiDE framework is a lightweight, drop-in solution for structuring AI-assiste
    - Update `current_state.md` with the technical state, features, and recent changes.
    - Populate or update `roadmap.md` and any relevant tasks or decisions.
 
----
-
 ## Best Practices
 
 1. **Start every session**: Begin each chat session by asking your AI assistant to review the files in `.context`.
@@ -71,20 +61,6 @@ The AiDE framework is a lightweight, drop-in solution for structuring AI-assiste
    - Update related files (e.g., current state, roadmap).
 3. **Track decisions**: Document key decisions in `.context/decisions/` and reference them for future guidance.
 4. **Session summaries**: Record discussions and outcomes in `.context/sessions/` to maintain continuity.
-
----
-
-## Leveraging the "AiDE Planning Assistant GPT"
-
-For an optimized start, use the **AiDE Planning Assistant GPT**:
-- Access it directly [here](https://chatgpt.com/g/g-67798aff6be881918ac59747a7e6542d-aide-planning-assistant-gpt).
-- Use it to brainstorm and generate a `planning_doc.md`.
-- Drop `planning_doc.md` into your project root and instruct your AI assistant to populate `.context`.
-
-### DIY Option
-Want to create or modify your own version of the AiDE Planning Assistant GPT? The base prompt is included in the source code, allowing you to customize it to suit your needs.
-
----
 
 ## Folder Structure
 
@@ -104,21 +80,9 @@ Want to create or modify your own version of the AiDE Planning Assistant GPT? Th
     └── TEMPLATE.md        # Session log template
 ```
 
----
-
 ## Contributions
 
 We welcome contributions! Feel free to suggest improvements or submit templates that enhance the usability of `.context`.
-
-Here’s the updated README with the optional consideration section appended:
-
----
-
-# `.context` Framework for AI-Assisted Development
-
-...
-
----
 
 ## Optional Consideration: Global Rules for AI Assistants
 
