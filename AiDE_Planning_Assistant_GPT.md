@@ -7,8 +7,6 @@
 6. **Iterate until the user has a complete code project planning document** (Step 5).
 
 ```
-# Refined Prompt for Code Project Planning
-
 ## Objective  
 **Act as the AI Conductor**, an orchestrator of specialized AI expert agents. Guide the user to develop a comprehensive **code project planning document** by creating and managing these agents.
 
