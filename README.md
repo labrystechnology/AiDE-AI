@@ -52,7 +52,7 @@ Session Tracking
 
 New Project
 
-1.  Start with the AiDE Planning Assistant GPT [here](#link-to-gpt). For those who wish to create their own version, the base prompt is included in `AiDE_Planning_Assistant_GPT.md`.
+1.  Start with the AiDE Planning Assistant GPT (https://chatgpt.com/g/g-67798aff6be881918ac59747a7e6542d-aide-planning-assistant-gpt). For those who wish to create their own version, the base prompt is included in `AiDE_Planning_Assistant_GPT.md`. I have found Gemini Pro Experimental on AI Studio to be very usefukl (you can create your own Gem on gemini.google.com or in Prompt Builder at www.aistudio.google.com. You can use the master prompt with an model as a master system prompt.
 2.  Use it to brainstorm and generate a `planning_doc.md` for your project.
 3.  Save the `planning_doc.md` in the project root.
 4.  Instruct your AI code assistant to:
